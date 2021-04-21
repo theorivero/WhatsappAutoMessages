@@ -63,15 +63,3 @@ class WhatsBot:
 		sleep(10)
 		self.webdriver.close()
 		self.webdriver.quit()
-
-
-# ------------------------------------------------------------------------------
-"""
-bot = WhatsBot()
-bot.open()
-
-bot.login()
-contato = ContactRow('Pedro','4899182048' )
-bot.send_message(contato, [f'Boa noite tudo bem? Seu nome é {contato.name}?', 'Você poderia me fazer o favor'])
-bot.close()
-"""
