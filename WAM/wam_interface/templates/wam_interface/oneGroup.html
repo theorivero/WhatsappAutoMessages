@@ -134,7 +134,7 @@
                             <td>{{contact.phone}}</td>
                             <td>{{contact.var_1}}</td>
                             <td>{{contact.var_2}}</td>
-                            <td><a class="btn btn-sm btn-danger"href="">Remover</a></td>
+                            <td><a class="btn btn-sm btn-danger"href="{% url 'delete-contact' contact.id%}">Remover</a></td>
                         </tr>
                     {% endfor %}  
                 </tbody>
