@@ -1,4 +1,4 @@
-{% extends 'wam_interface/main.html' %}
+{% extends "wam_interface/main.html" %}
 {% block content %}
 <style>
 	.card.card-body{
@@ -6,9 +6,8 @@
 	}
 </style>
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-6">
 		<div class="card card-body">
-
 			<form action="" method="POST">
 				{% csrf_token %}
 				{{ form.as_p }}
@@ -18,4 +17,4 @@
 		</div>
 	</div>
 </div>
-{% endblock content %}
+{% endblock %}

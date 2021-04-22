@@ -143,3 +143,182 @@ JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.j
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1619115603179	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofilekMubGW"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619115611924	Marionette	INFO	Listening on port 65266
+1619115612436	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619115694497	Marionette	INFO	Stopped listening on port 65266
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121133037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofileMaiwPG"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121139652	Marionette	INFO	Listening on port 49211
+1619121140003	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619121184235	Marionette	INFO	Stopped listening on port 49211
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121355189	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofileS9rb9s"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121361508	Marionette	INFO	Listening on port 49307
+1619121361568	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619121392995	Marionette	INFO	Stopped listening on port 49307
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121403029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofileLEXJAt"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121408942	Marionette	INFO	Listening on port 49362
+1619121409426	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619121437290	Marionette	INFO	Stopped listening on port 49362
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121593147	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofiledUWMJZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1619121600748	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofile77qmeQ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121609262	Marionette	INFO	Listening on port 49496
+1619121609721	Marionette	WARJavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619121650379	Marionette	INFO	Stopped listening on port 4941619121803614	Marionette	INFO	Stopped listening on port 49496
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ate to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 833: NotAllowedError: Shutting down and refusing additional I/O tasks
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121717185	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofile3XG5fv"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121723064	Marionette	INFO	Listening on port 49595
+1619121723554	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\airbox\AppData\Local\Temp\rust_mozprofile3XG5fv\protections.sqlite
+1619121817433	Marionette	INFO	Stopped listening on port 49595
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ing: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619121851423	Marionette	INFO	Stopped listening on port 49661
+[Parent 2060, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619121936392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofilefz0psS"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619121942186	Marionette	INFO	Listening on port 49738
+1619121942231	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.df9188bb4cd23ee53e79.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+[Child 12856, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1619121983054	Marionette	INFO	Stopped listening on port 49738
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619122006836	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofile38bEAW"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619122012739	Marionette	INFO	Listening on port 49814
+1619122013158	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619122048311	Marionette	INFO	Stopped listening on port 49814
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619122109072	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofilemdUbpa"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619122114935	Marionette	INFO	Listening on port 49894
+1619122115447	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619122155032	Marionette	INFO	Stopped listening on port 49894
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619122219301	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\airbox\\AppData\\Local\\Temp\\rust_mozprofile3nOo70"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619122225054	Marionette	INFO	Listening on port 49974
+1619122225124	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.b331bf4e2ea119ffdd12.js, line 1: unreachable code after return statement
+1619122273181	Marionette	INFO	Stopped listening on port 49974
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

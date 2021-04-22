@@ -5,14 +5,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
 
 class ContactRow:
-	def __init__(self, name, phone):
+	def __init__(self, name, phone, company, att1, att2):
 		self.name = name
 		self.phone = phone
+		self.company = company
+		self.att1 = att1
+		self.att2 = att2
 
-
-def humanize_text(textfield, message):
+def humanize_text(textfield, message, contact):
 	words = message.split(' ', maxsplit=10)
 	for word in words:
+		if "{nome}" in word:
+			word = word.replace("{nome}", contact.name)		
 		textfield.send_keys(word)
 		textfield.send_keys(' ')
 		sleep(0.3)
@@ -52,12 +56,11 @@ class WhatsBot:
 			txt_box = self.webdriver.find_element(*txt_box_locator)
 		
 			for message in messages:
-				humanize_text(txt_box, message)
+				humanize_text(txt_box, message, contact)
 
-		except:
-			print('erro')
+		except Exception as e:
+			print(e)
 
-		
 		
 	def close(self):
 		sleep(10)
