@@ -19,4 +19,5 @@ urlpatterns = [
 	path('delete_template/<str:pk>', views.deleteTemplate, name='delete-template' ),
 	path('update_template/<str:pk>', views.updateTemplate, name='update-template' ),
 
+
 ]

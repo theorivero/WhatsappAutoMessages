@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .bot import WhatsBot, ContactRow
 from django.forms import inlineformset_factory
+from django.contrib import messages
 
+import csv, io
+
+from .bot import WhatsBot, ContactRow
 from .models import *
 from .forms import *
 
@@ -61,6 +64,27 @@ def deleteContactsGroup(request, pk):
 def oneGroup(request, pk):
 	contactsGroup = ContactsGroup.objects.get(id=pk)
 	contacts = Contact.objects.filter(group=contactsGroup)
+	if request.method == 'POST' and 'file' in request.FILES:
+		doc = request.FILES #returns a dict-like object
+		csv_file = request.FILES['file']
+		print(csv_file)
+		data_set = csv_file.read().decode('UTF-8')
+    # setup a stream which is when we loop through each line we are able to handle a data in a stream
+		io_string = io.StringIO(data_set)
+		next(io_string)
+		for column in csv.reader(io_string, delimiter=',', quotechar="|"):
+		    _, created = Contact.objects.update_or_create(
+		        name=column[0],
+		        company=column[1],
+		        phone=column[2],
+		        var_1=column[3],
+		        var_2=column[4],
+		        group=contactsGroup
+		    )
+		return redirect(f'/contacts_group/{pk}')
+
+
+
 	context = {
 				'contactsGroup':contactsGroup,
 				'contacts':contacts,
@@ -169,3 +193,6 @@ def run_bot(messages, contacts):
 	for contact in contacts:
 		bot.send_message(contact, messages)
 	bot.close()
+
+
+

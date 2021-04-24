@@ -14,7 +14,7 @@ class Contact(models.Model):
 	phone = models.CharField(max_length= 200, null=True)
 	var_1 = models.CharField(max_length= 200, null=True)
 	var_2 = models.CharField(max_length= 200, null=True)
-	group = models.ForeignKey(ContactsGroup, null=True, on_delete=models.SET_NULL)
+	group = models.ForeignKey(ContactsGroup, null=True, on_delete=models.CASCADE)
 
 	def __str__(self):
 		return self.name
