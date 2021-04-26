@@ -16,7 +16,14 @@ def humanize_text(textfield, message, contact):
 	words = message.split(' ', maxsplit=10)
 	for word in words:
 		if "{nome}" in word:
-			word = word.replace("{nome}", contact.name)		
+			word = word.replace("{nome}", contact.name)
+		if "{empresa}" in word:
+			word = word.replace("{empresa}", contact.company)
+		if "{att1}" in word:
+			word = word.replace("{att1}", contact.att1)
+		if "{att2}" in word:
+			word = word.replace("{att2}", contact.att2)
+
 		textfield.send_keys(word)
 		textfield.send_keys(' ')
 		sleep(0.3)

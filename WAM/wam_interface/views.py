@@ -12,19 +12,26 @@ from .forms import *
 # Create your views here.
 
 def home(request):
-	
+	contactsGroups = ContactsGroup.objects.all()
+	MessageTemplates = MessageTemplate.objects.all()
 	form = BotConfigForm()
-
 	if request.method == 'POST':
 		form = BotConfigForm(request.POST)
 		if form.is_valid():
 			form_data = form.cleaned_data
 			messages = template_to_messages(form_data['template'])
 			contacts = group_to_contacts(form_data['group'])
-			run_bot(messages,contacts)
+			try:
+				run_bot(messages,contacts)
+			except:
+				redirect('/')
 			return redirect('/')
 
-	context = {'form':form}
+	context = {
+				'form' : form,
+				'groups':contactsGroups,
+				'templates':MessageTemplates,
+			}
 	return render(request, 'wam_interface/home.html', context)
 
 # Many Group of Contacts -------------------------------------------------------
@@ -40,15 +47,13 @@ def contactsGroupPage(request):
 	return render(request, 'wam_interface/contactsGroup.html', context)
 
 def createContactsGroup(request):
-	form = ContactsGroupForm()
-
 	if request.method == 'POST':
 		form = ContactsGroupForm(request.POST)
 		if form.is_valid():
 			form.save()
 			return redirect('/contacts')
 
-	context = {'form':form}
+	context = {}
 
 	return render(request, 'wam_interface/contactsGroup_form.html', context)
 
@@ -67,7 +72,7 @@ def oneGroup(request, pk):
 	if request.method == 'POST' and 'file' in request.FILES:
 		doc = request.FILES #returns a dict-like object
 		csv_file = request.FILES['file']
-		print(csv_file)
+		#print(csv_file)
 		data_set = csv_file.read().decode('UTF-8')
     # setup a stream which is when we loop through each line we are able to handle a data in a stream
 		io_string = io.StringIO(data_set)
@@ -95,7 +100,7 @@ def oneGroup(request, pk):
 # 1 Contact --------------------------------------------
 
 def createContact(request, pk):
-	ContactFormSet = inlineformset_factory(ContactsGroup, Contact, fields=('name','company','phone','var_1','var_2'), extra=1)
+	ContactFormSet = inlineformset_factory(ContactsGroup, Contact, fields=('name','company','phone','var_1','var_2'), extra=1, can_delete=False)
 	contactsGroup = ContactsGroup.objects.get(id=pk)
 	#form = OrderForm(initial = {'customer': customer})
 	formset = ContactFormSet(queryset=Contact.objects.none(), instance=contactsGroup)
@@ -111,9 +116,10 @@ def createContact(request, pk):
 
 def deleteContact(request, pk):
 	contact = Contact.objects.get(id=pk)
+	group_id =  contact.group.id
 	if request.method == 'POST':
 		contact.delete()
-		return redirect('/contacts')
+		return redirect(f'/contacts_group/{group_id}')
 
 	context = {'item': contact}
 	return render(request, 'wam_interface/delete.html', context)
@@ -130,15 +136,13 @@ def MessageTemplatesHome(request):
 	return render(request, 'wam_interface/message_templates_home.html', context)
 
 def createTemplate(request):
-	form = TemplateForm()
-
 	if request.method == 'POST':
 		form = TemplateForm(request.POST)
 		if form.is_valid():
 			form.save()
 			return redirect('/templates')
 
-	context = {'form':form}
+	context = {}
 
 	return render(request, 'wam_interface/template_form.html', context)
 
@@ -154,16 +158,15 @@ def deleteTemplate(request, pk):
 
 def updateTemplate(request, pk):
 	template = MessageTemplate.objects.get(id=pk)
-	form = TemplateForm(instance=template)
 	if request.method == "POST":
 		form = TemplateForm(request.POST, instance=template)
 		if form.is_valid():
 			form.save()
 			return redirect('/templates')
 
-	context = {'form': form}
+	context = {'template': template}
 
-	return render(request, 'wam_interface/template_form.html', context)
+	return render(request, 'wam_interface/update_template_form.html', context)
 
 # bot funcs -------------------------------------------
 
@@ -193,6 +196,7 @@ def run_bot(messages, contacts):
 	for contact in contacts:
 		bot.send_message(contact, messages)
 	bot.close()
+
 
 
 

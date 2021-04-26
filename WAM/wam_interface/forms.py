@@ -12,6 +12,8 @@ class ContactForm(ModelForm):
 	class Meta:
 		model = Contact
 		fields = '__all__'
+		exclude = ['group']
+
 
 class TemplateForm(ModelForm):
 	class Meta:

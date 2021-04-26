@@ -8,7 +8,6 @@
 		display:inline-block;
 		text-align: center; 
 	}
-	
 </style>
 <div class="row">
 	<div class="col-md-6">
@@ -16,16 +15,16 @@
 			<form action="" method="POST">
 				{% csrf_token %}
 				<label for="name">Nome do template: </label>
-			    <input id="name" type="text" name="name"></br>
+			    <input id="name" type="text" name="name" value="{{ template.name }}"></br>
 
 			    <label for="message_1">1ª Mensagem: </label></br>
-			    <textarea id="message_1" name="message_1" rows="3" cols="50"></textarea></br>
+			    <textarea id="message_1" name="message_1" rows="3" cols="50">{{ template.message_1 }}</textarea></br>
 
 			    <label for="message_2">2ª Mensagem: </label></br>
-			    <textarea id="message_2" name="message_2" rows="3" cols="50"></textarea></br>
+			    <textarea id="message_2" name="message_2" rows="3" cols="50">{{ template.message_2 }}</textarea></br>
 
 			    <label for="message_3">3ª Mensagem: </label></br>
-			    <textarea id="message_3" name="message_3" rows="3" cols="50"></textarea></br>
+			    <textarea id="message_3" name="message_3" rows="3" cols="50">{{ template.message_3 }}</textarea></br>
 
 			    <input type="submit" value="Criar">
 			</form>

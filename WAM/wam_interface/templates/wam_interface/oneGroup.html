@@ -1,5 +1,7 @@
 {% extends 'wam_interface/main.html' %}
 {% block content %}
+{% load static %}
+
 <style>
     body {
         color: #404E67;
@@ -110,6 +112,9 @@
     #label1 {
         margin-bottom: 0px;
     }
+    #help-csv {
+        margin-left: -50px;
+    }
 </style>
 <body>
     <div class="container">
@@ -153,10 +158,11 @@
             <form action="" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <label for="file1" class="btn btn-info add-new" id='label1'>
-                    <i ></i> Importar CSV
+                    <i ></i> Escolher .CSV
                 </label>
                 <input type="file" id="file1" name="file">
-                <button class="btn btn-info add-new" type="submit">Upload</button>
+                <button class="btn btn-info add-new" type="submit">Adicionar</button>
+                <p id='help-csv'>Como enviar um arquivo?<a href="{% static 'csv/contatos.csv' %}"> Baixe aqui um exemplo</a></h3>
             </form>
 
         </div>

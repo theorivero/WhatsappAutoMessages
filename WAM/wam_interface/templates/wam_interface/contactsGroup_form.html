@@ -10,8 +10,9 @@
 		<div class="card card-body">
 			<form action="" method="POST">
 				{% csrf_token %}
-				{{ form }}
-				<input type="submit" name="Submit">
+				<label for="name">Nome do Grupo: </label>
+			    <input id="name" type="text" name="name">
+			    <input type="submit" value="OK">
 			</form>
 
 		</div>
