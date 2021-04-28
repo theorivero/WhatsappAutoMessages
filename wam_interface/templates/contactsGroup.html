@@ -93,44 +93,42 @@
     }
 </style>
 <body>
-    <div class="container">
-        <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-8"><h2><b>Grupos de Contatos:</b></h2></div>
-                    <div class="col-sm-4">
-                        <a href="{% url 'create-group' %}">
-                            <button type="button" class="btn btn-info add-new" ><i class="fa fa-plus"></i> Criar Grupo</button>
-                        </a>
-                    </div>
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8"><h2><b>Grupos de Contatos:</b></h2></div>
+                <div class="col-sm-4">
+                    <a href="{% url 'create-group' %}">
+                        <button type="button" class="btn btn-info add-new" ><i class="fa fa-plus"></i> Criar Grupo</button>
+                    </a>
                 </div>
             </div>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Nome do Grupo</th>
-                        <th>Nº de Contatos</th>                        
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% load tag %}
-                    {% for group in contactsGroups %}
-                        <tr>
-                            <td>{{group.name}}</td>
-                            {% count_contacts_by_group contacts group as count %}
-                            <td>{{count}}</td>                        
-                            <td>
-                                <a class="btn btn-sm btn-info" href="{% url 'group' group.id %}">Abrir</a>
-                                
-                            </td>
-                            <td><a class="btn btn-sm btn-danger"href="{% url 'delete-group' group.id %}">Remover</a></td>
-                        </tr>
-                    {% endfor %}  
-                </tbody>
-            </table>
         </div>
-    </div>     
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome do Grupo</th>
+                    <th>Nº de Contatos</th>                        
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% load tag %}
+                {% for group in contactsGroups %}
+                    <tr>
+                        <td>{{group.name}}</td>
+                        {% count_contacts_by_group contacts group as count %}
+                        <td>{{count}}</td>                        
+                        <td>
+                            <a class="btn btn-sm btn-info" href="{% url 'group' group.id %}">Abrir</a>
+                            
+                        </td>
+                        <td><a class="btn btn-sm btn-danger"href="{% url 'delete-group' group.id %}">Remover</a></td>
+                    </tr>
+                {% endfor %}  
+            </tbody>
+        </table>
+    </div>
 </body>
 {% endblock content %}
