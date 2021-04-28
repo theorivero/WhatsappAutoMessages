@@ -1,8 +1,10 @@
-from selenium.webdriver import Firefox
+from selenium.webdriver import Chrome
+from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
+import os
 
 class ContactRow:
 	def __init__(self, name, phone, company, att1, att2):
@@ -31,8 +33,17 @@ def humanize_text(textfield, message, contact):
 
 class WhatsBot:
 	def __init__(self):
-		self.webdriver = Firefox()
+		self.webdriver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=get_chrome_options())
 		self.url = 'https://web.whatsapp.com/'
+
+	def get_chrome_options(self):
+		chrome_options = webdriver.ChromeOptions()
+		chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+		chrome_options.add_argument("--headless")
+		chrome_options.add_argument("--disable-dev-shm-usage")
+		chrome_options.add_argument("--no-sandbox")
+		return chrome_options
+
 
 	def open(self):
 		self.webdriver.get(self.url)
