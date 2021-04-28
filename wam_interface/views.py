@@ -190,6 +190,7 @@ def group_to_contacts(group):
 
 def run_bot(messages, contacts):
 	bot = WhatsBot()
+	a='a'
 	bot.open()
 
 	bot.login()
