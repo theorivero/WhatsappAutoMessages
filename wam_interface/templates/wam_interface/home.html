@@ -1,0 +1,41 @@
+{% extends 'wam_interface/main.html' %}
+{% block content %}
+<style>
+	.card.card-body{
+		background-color: #DCF8C6
+	}
+	div.row{
+		font-size: 30px;
+		height: 400px;
+	}
+	form {
+		margin-top: 180px;
+	}
+</style>
+<div class="row">
+			<center>
+				<form action="" method="POST">
+					<center>
+						{% csrf_token %}
+						<label for="id_template">Enviar as mensagens:</label>
+						<select name="template" required="" id="id_template" class="form-select" aria-label="Default select example">
+							 <option selected>Escolha um template</option>
+						{% for template in templates %}						
+							<option value="{{template.id}}">{{template.name}}</option>
+						{% endfor %}
+						</select>
+
+						<label for="id_group">para os contatos:</label>
+						<select name="group" required="" id="id_group" class="form-select" aria-label="Default select example">
+							 <option selected>Escolha o grupo</option>
+						{% for group in groups %}						
+							<option value="{{group.id}}">{{group.name}}</option>
+						{% endfor %}
+						</select>
+						<input type="submit" class="btn btn-primary btn-lg" value="Enviar Mensagens" >
+					</center>
+				</form>
+			</center>
+	
+</div>
+{% endblock content %}
