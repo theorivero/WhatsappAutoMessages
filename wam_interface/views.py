@@ -32,7 +32,7 @@ def home(request):
 				'groups':contactsGroups,
 				'templates':MessageTemplates,
 			}
-	return render(request, 'wam_interface/home.html', context)
+	return render(request, 'home.html', context)
 
 # Many Group of Contacts -------------------------------------------------------
 
@@ -44,7 +44,7 @@ def contactsGroupPage(request):
 				'contacts':contacts
 				}
 
-	return render(request, 'wam_interface/contactsGroup.html', context)
+	return render(request, 'contactsGroup.html', context)
 
 def createContactsGroup(request):
 	if request.method == 'POST':
@@ -55,7 +55,7 @@ def createContactsGroup(request):
 
 	context = {}
 
-	return render(request, 'wam_interface/contactsGroup_form.html', context)
+	return render(request, 'contactsGroup_form.html', context)
 
 def deleteContactsGroup(request, pk):
 	contactsGroup = ContactsGroup.objects.get(id=pk)
@@ -64,7 +64,7 @@ def deleteContactsGroup(request, pk):
 		return redirect('/contacts')
 
 	context = {'item': contactsGroup}
-	return render(request, 'wam_interface/delete.html', context)
+	return render(request, 'delete.html', context)
 
 def oneGroup(request, pk):
 	contactsGroup = ContactsGroup.objects.get(id=pk)
@@ -94,7 +94,7 @@ def oneGroup(request, pk):
 				'contactsGroup':contactsGroup,
 				'contacts':contacts,
 		}
-	return render(request, 'wam_interface/oneGroup.html', context)
+	return render(request, 'oneGroup.html', context)
 
 
 # 1 Contact --------------------------------------------
@@ -112,7 +112,7 @@ def createContact(request, pk):
 
 	context = {'formset': formset}
 
-	return render(request, 'wam_interface/contact_form.html', context)
+	return render(request, 'contact_form.html', context)
 
 def deleteContact(request, pk):
 	contact = Contact.objects.get(id=pk)
@@ -122,7 +122,7 @@ def deleteContact(request, pk):
 		return redirect(f'/contacts_group/{group_id}')
 
 	context = {'item': contact}
-	return render(request, 'wam_interface/delete.html', context)
+	return render(request, 'delete.html', context)
 
 
 # Messages ----------------------------------------------------
@@ -133,7 +133,7 @@ def MessageTemplatesHome(request):
 				'MessageTemplates': MessageTemplates
 				}
 
-	return render(request, 'wam_interface/message_templates_home.html', context)
+	return render(request, 'message_templates_home.html', context)
 
 def createTemplate(request):
 	if request.method == 'POST':
@@ -144,7 +144,7 @@ def createTemplate(request):
 
 	context = {}
 
-	return render(request, 'wam_interface/template_form.html', context)
+	return render(request, 'template_form.html', context)
 
 def deleteTemplate(request, pk):
 	template = MessageTemplate.objects.get(id=pk)
@@ -153,7 +153,7 @@ def deleteTemplate(request, pk):
 		return redirect('/templates')
 
 	context = {'item': template}
-	return render(request, 'wam_interface/delete.html', context)
+	return render(request, 'delete.html', context)
 
 
 def updateTemplate(request, pk):
@@ -166,7 +166,7 @@ def updateTemplate(request, pk):
 
 	context = {'template': template}
 
-	return render(request, 'wam_interface/update_template_form.html', context)
+	return render(request, 'update_template_form.html', context)
 
 # bot funcs -------------------------------------------
 
